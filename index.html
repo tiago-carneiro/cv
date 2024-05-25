@@ -24,10 +24,20 @@
             max-width: 185mm;
         }
 
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
         @media all and (max-width: 1380px) {
             div {
                 margin: auto;
                 width: 100%;
+            }
+
+            tr>*+* {
+                padding-left: 15px;
+                padding-bottom: 10px;
             }
         }
 
@@ -37,14 +47,13 @@
                 margin-bottom: 0;
             }
 
-            body {
-                padding-top: 72px;
-                padding-bottom: 72px;
+            .spaceForPrint {
+                padding-top: 82px;
             }
 
-            .spaceForPrint {
-                padding-top: 72px;
-
+            body {
+                padding-top: 52px;
+                padding-bottom: 52px;
             }
 
             div {
@@ -59,7 +68,7 @@
 <body>
 
     <div>
-        Tiago Carneiro - 33 years old<br />
+        <span style="font-size: 25px">Tiago Carneiro</span> - 33 years old<br />
         <br />
         <b>Resume</b>
         <br />
