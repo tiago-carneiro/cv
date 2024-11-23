@@ -44,16 +44,27 @@
             @media print {
 
                 @page {
+                    padding-top: 0 !important;
                     margin-top: 0 !important;
+                    padding-bottom: 0 !important;
                     margin-bottom: 0 !important;
                 }
 
                 .spaceForPrint {
+                    padding-top: 82px;
+                }
+
+                .spaceForPrint.safari {
                     padding-top: 62px;
                 }
 
                 body {
                     padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+
+                body.safari {
+                    padding-top: 0px;
                     padding-bottom: 30px;
                 }
 
@@ -234,5 +245,10 @@
             </table>
         </div>
     </body>
+    <script>
+        if (navigator.userAgent.indexOf('Safari') != -1) {
+            document.body.classList.add('safari');
+        }
+    </script>
 
 </html>
