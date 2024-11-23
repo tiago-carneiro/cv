@@ -51,7 +51,7 @@
                 }
 
                 .spaceForPrint {
-                    padding-top: 82px;
+                    padding-top: 72px;
                 }
 
                 .spaceForPrint.safari {
@@ -59,7 +59,7 @@
                 }
 
                 body {
-                    padding-top: 30px;
+                    padding-top: 20px;
                     padding-bottom: 30px;
                 }
 
@@ -71,6 +71,13 @@
                 div {
                     margin: auto;
                     width: 100%;
+                }
+
+                header,
+                footer,
+                .print-footer,
+                .print-header {
+                    display: none !important;
                 }
 
             }
@@ -246,7 +253,10 @@
         </div>
     </body>
     <script>
-        if (navigator.userAgent.indexOf('Safari') != -1) {
+        if (navigator.userAgent.indexOf('Safari') !== -1 &&
+            (navigator.userAgent.indexOf('iPhone') !== -1 ||
+                navigator.userAgent.indexOf('iPad') !== -1 ||
+                navigator.userAgent.indexOf('iPod') !== -1)) {
             document.body.classList.add('safari');
         }
     </script>
