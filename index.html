@@ -164,10 +164,58 @@
 
     .education-entry p { margin: 0; }
 
-    @media (max-width: 820px) {
+    @media screen {
+      html, body {
+        background: #f3f4f6;
+        font-size: 15.5px;
+        line-height: 1.36;
+      }
+
+      .cv {
+        width: min(calc(100% - 32px), 1000px);
+        padding: 48px 56px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+      }
+
+      h1 { font-size: 34px; }
+      .headline { font-size: 18px; }
+      .contact {
+        margin: 18px 0 14px;
+        font-size: 14.5px;
+      }
+      .summary { font-size: 15.5px; }
+      .summary p + p { margin-top: 12px; }
+      .section { margin-top: 24px; }
+      h2 {
+        margin-bottom: 8px;
+        font-size: 19px;
+      }
+      .skills p, .languages p { margin-bottom: 8px; }
+      .experience-section { margin-top: 28px; }
+      .role { margin-bottom: 22px; }
+      .role-title { font-size: 16px; }
+      .meta-table { margin: 5px 0; }
+      ul {
+        margin: 8px 0 10px;
+        padding-left: 30px;
+      }
+      li { margin-bottom: 4px; }
+      .technologies {
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .more-experience {
+        margin-top: 16px;
+        font-size: 14.5px;
+      }
+      .education-entry { margin-bottom: 10px; }
+    }
+
+    @media screen and (max-width: 820px) {
       .cv {
         width: 100%;
         padding: 28px 22px;
+        box-shadow: none;
       }
 
       .meta-table,
@@ -235,7 +283,7 @@
 
     <div class="section languages" role="region" aria-labelledby="languages-heading">
       <h2 id="languages-heading">Languages</h2>
-      <p>Portuguese: Native | English: Professional Working Proficiency</p>
+      <p>Portuguese: Native or Bilingual | English: Professional Working Proficiency</p>
     </div>
 
     <div class="section experience-section" role="region" aria-labelledby="experience-heading">
