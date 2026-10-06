@@ -1,260 +1,321 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum vitae of Tiago Carneiro, Senior Mobile Engineer specializing in .NET MAUI, Xamarin, C#/.NET, Azure DevOps and software architecture.">
+  <title>Tiago Carneiro - Senior Mobile Engineer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      background: #fff;
+    }
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    * { box-sizing: border-box; }
 
-        <title>Tiago Carneiro - Resume</title>
-        <style>
-            tr>*+* {
-                padding-left: 35px;
-                padding-bottom: 10px;
-            }
+    html, body {
+      margin: 0;
+      background: #fff;
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9pt;
+      line-height: 1.08;
+    }
 
-            td {
-                vertical-align: top
-            }
+    .cv {
+      width: 210mm;
+      margin: 0 auto;
+      padding: 15mm;
+      background: #fff;
+    }
 
-            hr {
-                color: lightgray;
-            }
+    a {
+      color: #0563c1;
+      text-decoration: underline;
+      text-underline-offset: 1px;
+    }
 
-            div {
-                margin: auto;
-                width: 50%;
-                max-width: 185mm;
-            }
+    .identity { text-align: center; }
 
-            body {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
+    h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; }
 
-            @media all and (max-width: 1380px) {
-                div {
-                    margin: auto;
-                    width: 100%;
-                }
+    h1 {
+      margin: 0 0 1pt;
+      font-size: 18pt;
+      line-height: 1.05;
+      font-weight: 700;
+      text-align: center;
+    }
 
-                tr>*+* {
-                    padding-left: 15px;
-                    padding-bottom: 10px;
-                }
-            }
+    .headline {
+      margin: 0;
+      font-size: 10.5pt;
+      line-height: 1.1;
+      text-align: center;
+    }
 
-            @media print {
+    .contact {
+      margin: 7pt 0 5pt;
+      font-size: 8.5pt;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 1.15;
+    }
 
-                @page {
-                    padding-top: 0 !important;
-                    margin-top: 0 !important;
-                    padding-bottom: 0 !important;
-                    margin-bottom: 0 !important;
-                }
+    .summary {
+      margin: 0 auto;
+      color: #1f1f1f;
+      font-size: 8.7pt;
+      text-align: center;
+    }
 
-                .spaceForPrint {
-                    padding-top: 72px;
-                }
+    .summary p { margin: 0; }
+    .summary p + p { margin-top: 2pt; }
 
-                .spaceForPrint.safari {
-                    padding-top: 62px;
-                }
+    .section { margin-top: 5pt; }
 
-                body {
-                    padding-top: 20px;
-                    padding-bottom: 30px;
-                }
+    h2 {
+      margin: 0 0 2pt;
+      font-size: 10.5pt;
+      line-height: 1.1;
+      font-weight: 700;
+      text-transform: uppercase;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
 
-                body.safari {
-                    padding-top: 0px;
-                    padding-bottom: 30px;
-                }
+    .skills p, .languages p { margin: 0 0 1pt; }
 
-                div {
-                    margin: auto;
-                    width: 100%;
-                }
+    .experience-section { margin-top: 7pt; }
 
-                header,
-                footer,
-                .print-footer,
-                .print-header {
-                    display: none !important;
-                }
+    .role {
+      margin: 0 0 5pt;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
 
-            }
-        </style>
-    </head>
+    .role-title {
+      margin: 0;
+      font-size: 9pt;
+      line-height: 1.08;
+      font-weight: 700;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
 
-    <body>
+    .meta-table {
+      width: 100%;
+      margin: 1pt 0;
+      border: 0;
+      border-collapse: collapse;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
 
-        <div>
-            <p><span style="font-size: 22px">Tiago Carneiro</span> - 35 years old</p>
-            <hr />
+    .meta-table td {
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+    }
 
-            <p>Since 2009, I have been working with .NET development and focus on mobile applications since 2016.
-                I’ve specialized in Xamarin.Forms/MAUI. My work revolves around refactoring legacy projects to boost
-                performance, improve layouts, and ensure cleaner, more maintainable code.</p>
-            <p>I enjoy working closely with UX/UI teams to create user-friendly flows, always following the latest
-                platform guidelines. Whether it's building custom components or designing XAML layouts, my goal is to
-                make feature development and updates as smooth as possible.</p>
-            <p>Migrating Xamarin.Forms projects to MAUI is a core part of my work, involving significant refactoring. 
-                I also manage multi-tenant WhiteLabel applications using Azure Pipelines, efficiently deploying a single 
-                project across multiple apps and tenants.</p>
-            <p>For me, it’s all about understanding what the customer needs and finding ways to make their day easier.
-                Solutions that simplify workflows and truly solve problems are what I strive to deliver.</p>
-            <p>Agile - Technical leader - Design Sprint - Code review - Azure - github - CI/CD Azure pipeline - backend/APIs - microservices - Blazor - MySql/MSSQL
-                - Stores
-                Apple/Google -
-                Xamarin.Forms/MAUI - localDB - firebase
-                (events/crash/reports/analytics/push Notifications) - Figma UI/UX</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/tiago-carneiro-0b335751/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/tiago-carneiro/FlurlWithPollyMAUI" target="_blank"
-                        rel="noopener noreferrer">MAUI project</a></li>
-                <li><a href=" https://www.linkedin.com/pulse/polly-flurl-improve-maui-http-requests-1-tiago-carneiro-yx8ke/"
-                        target="_blank" rel="noopener noreferrer">Article</a>
-                </li>
-            </ul>
-            <hr />
-            <br />
-            <strong>Experience</strong>
-            <table>
-                <tr>
-                    <td NOWRAP>02/2022</td>
-                    <td>
-                        Phoenix Software - The Real Estate Platform (REP) - CA<br />
-                        Specialist xamarin/MAUI developer. Helping with UX/UI. Agile process, litedb,
-                        Xamarin.Shell, flurl, firebase events/crash reports/analytics/push notifications.<br />
-                        Refact/port old projects from Xamarin.Forms to .NET8 MAUI.<br />
-                        Azure pipeline to build releases for different tenants and clients.
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>06/2019 - 05/2022</td>
-                    <td>
-                        Materialize (freelancer)<br />
-                        Specialist xamarin developer. Free-lancer. Design Sprint. Help with UX/UI.<br />
-                        Xamarin.forms, autofac, litedb, Xamarin.Shell, prism, flurl.
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>10/2019 - 05/2022</td>
-                    <td >
-                        Inlog - part time<br />
-                        Master xamarin developer/analyst. Maintenance of developed projects.<br />
-                        Xamarin.forms, refit, autofac, litedb, googleMaps
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>10/2019 - 04/2020</td>
-                    <td >
-                        VaultOne<br />
-                        Xamarin developer. Mobile app for security chats, messages, share files<br />
-                        (an application like whatsapp, but with more security and controls).<br />
-                        Application form mobile and desktop.<br />
-                        Xamarin.forms, refit, autofac, flurl, litedb. Prism
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>05/2019 - 10/2019</td>
-                    <td>
-                        Agrotopus<br />
-                        Xamarin developer. Publish apps. Tech leader.<br />
-                        Definition of integration with web/api team.<br />
-                        Xamarin.forms, refit, autofac, litedb, googleMaps, flurl
-                    </td>
-                </tr>
-                <tr>
-                    <td class="spaceForPrint" NOWRAP>12/2017 - 05/2019</td>
-                    <td class="spaceForPrint">
-                        Inlog<br />
-                        Xamarin developer. Refact old projects from xamarin.android to vanila
-                        Xamarin.forms. GoogleMaps api usage. <br />
-                        Internal projects to control bus drivers activities. Send logs for our servers and ANTT
-                        (govern).<br />
-                        Xamarin.forms, refit, autofac, litedb, googleMapsApi
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>08/2016 - 12/2017</td>
-                    <td>
-                        Madero<br />
-                        Xamarin Developer. Internal projects. Mobile apps for restaurants, menu,
-                        online purchase, credit card payment, api integration.<br />
-                        Some web projects, data processing.<br />
-                        Xamarin, MVVMCross, Xamarin forms, prism, .netFramework, entityFramework,
-                        .netCore, Dapper
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>05/2011 - 08/2016</td>
-                    <td>
-                        Solyos<br />
-                        Tech leader. Talk with clients. Sistem Analysis. FullStack Web Developer<br />
-                        Silverlgitht, AngularJS + Bootstrap, WebApi C#, SqlServer DB, codeFirst.
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>02/2010 - 05/2011</td>
-                    <td>
-                        TechResult<br />
-                        Jr FullStack Web developer<br />
-                        aspx, sql, c#, crystal report, javaScript, html, silverLight4.
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>09/2008 - 07/2009</td>
-                    <td>
-                        FACECLA - Microsoft Innovation Center<br />
-                        Trainee<br />
-                        Aspx, c#, sql2005, silverlight2, css
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <br />
-                        <b>Education</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>2008 - 2010 </td>
-                    <td>
-                        FACECLA - Faculdade Cenecista Presidente Kennedy<br />
-                        Bachelor of Information Systems
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>2016 - 2017</td>
-                    <td>
-                        Universidade Positivo<br />
-                        Masters Degree in Mobile Applications and Cloud Computing
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <br />
-                        <b>Other activities</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td NOWRAP>Volunteer work</td>
-                    <td>
-                        <a href="https://www.linkedin.com/pulse/volunteer-work-african-dawn-1-tiago-carneiro/">African
-                            Down</a> (02/2019)
-                        <br />
-                        Feed, change the water, pet the animals, clean the cages and keep the animals safe.
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </body>
-    <script>
-        if (navigator.userAgent.indexOf('Safari') !== -1 &&
-            (navigator.userAgent.indexOf('iPhone') !== -1 ||
-                navigator.userAgent.indexOf('iPad') !== -1 ||
-                navigator.userAgent.indexOf('iPod') !== -1)) {
-            document.body.classList.add('safari');
-        }
-    </script>
+    .meta-table td:first-child { padding-right: 9pt; }
 
+    .meta-table .period {
+      width: 1%;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 1pt 0 2pt;
+      padding-left: 0.28in;
+    }
+
+    li {
+      margin: 0 0 0.5pt;
+      padding-left: 0.02in;
+      break-inside: avoid;
+    }
+
+    .technologies {
+      margin: 1pt 0 0;
+      font-size: 8.2pt;
+    }
+
+    .tenure-note {
+      margin: 1pt 0;
+      font-style: italic;
+    }
+
+    .continuation-heading { margin-top: 0; }
+
+    .more-experience {
+      margin: 6pt 0 0;
+      font-size: 8.5pt;
+      font-weight: 700;
+    }
+
+    .education-entry {
+      margin: 0 0 3pt;
+      break-inside: avoid;
+    }
+
+    .education-entry p { margin: 0; }
+
+    @media (max-width: 820px) {
+      .cv {
+        width: 100%;
+        padding: 28px 22px;
+      }
+
+      .meta-table,
+      .meta-table tbody,
+      .meta-table tr,
+      .meta-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .meta-table .period {
+        text-align: left;
+        white-space: normal;
+      }
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 15mm;
+    }
+
+    @media print {
+      .cv {
+        width: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      .page-two {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="cv">
+    <header class="identity">
+      <h1>Tiago Carneiro</h1>
+      <p class="headline">Senior Mobile Engineer | .NET MAUI | C#/.NET | Xamarin | Azure DevOps | Software Architecture</p>
+      <p class="contact">
+        Belo Horizonte, Brazil |
+        <a href="tel:+5541996367129">+55 41 99636-7129</a> |
+        <a href="mailto:web-tiago@hotmail.com">E-mail</a> |
+        <a href="https://www.linkedin.com/in/tiagocarneiro-dev">LinkedIn</a> |
+        <a href="https://github.com/tiago-carneiro/">Portfolio</a>
+      </p>
+      <div class="summary">
+        <p>Mobile Engineer specialized in .NET MAUI, Xamarin, and C#/.NET, with 15+ years of experience in software development and a strong focus on mobile application development, modernization, and scalable software architecture. Experienced in building and maintaining cross-platform applications, migrating legacy Xamarin.Forms solutions to .NET MAUI, and delivering high-performance mobile experiences.</p>
+        <p>I work across the full software development lifecycle, with a specialization in mobile development, from architecture and UI implementation to API integration, cloud services, AI integration, CI/CD, and multi-environment deployments. I have hands-on experience with Azure DevOps, Firebase, REST APIs, local data storage, Figma, and AI/LLM technologies, while collaborating closely with UX/UI teams to turn product requirements and designs into intuitive, reliable, and maintainable solutions.</p>
+      </div>
+    </header>
+
+    <div class="section skills" role="region" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <p><strong>Mobile and Architecture:</strong> .NET MAUI, Xamarin.Forms, C#, .NET, Clean and Modular Architecture, MAUI Shell, Multi-Tenant and White-Label Solutions</p>
+      <p><strong>AI, Cloud and Backend:</strong> AI-Assisted Development, LLM Integration, NLP, Azure DevOps, CI/CD, REST APIs, Console Applications, Firebase, SQLite, LiteDB</p>
+      <p><strong>Product:</strong> Figma, UX/UI Collaboration, Product Development</p>
+    </div>
+
+    <div class="section languages" role="region" aria-labelledby="languages-heading">
+      <h2 id="languages-heading">Languages</h2>
+      <p>Portuguese: Native | English: Professional Working Proficiency</p>
+    </div>
+
+    <div class="section experience-section" role="region" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Professional Experiences</h2>
+
+      <article class="role">
+        <h3 class="role-title">Mobile Engineer | .NET MAUI &amp; Xamarin</h3>
+        <table class="meta-table" role="presentation"><tr><td>Phoenix Software - The Real Estate Platform (REP), Canada - Remote</td><td class="period">Feb 2022 - Present</td></tr></table>
+        <ul>
+          <li>Develop and maintain cross-platform, multi-tenant applications using C#, .NET MAUI, Xamarin, MAUI Shell, Firebase, REST APIs, LiteDB, and SQLite.</li>
+          <li>Rebuilt the Xamarin application in .NET MAUI because direct migration was not feasible, introducing a modular architecture and achieving a 90-100% error-free success rate.</li>
+          <li>Created CI/CD pipelines that assemble client-specific applications, apply assets and configurations, generate versions, and publish releases to the Apple App Store and Google Play.</li>
+          <li>Develop AI-assisted workflows using Markdown and requirements files for code generation, validation, and technical documentation.</li>
+          <li>Developed console applications for internal automation and server service queue management, reducing dependency on Azure processing.</li>
+        </ul>
+        <p class="technologies"><strong>Technologies:</strong> C#, .NET, .NET MAUI, Xamarin.Forms, MAUI Shell, Azure DevOps, CI/CD, Firebase, Flurl, REST APIs, LiteDB, SQLite, Dapper, SQL, Figma, AI Integration.</p>
+      </article>
+
+      <article class="role">
+        <h3 class="role-title">Xamarin Developer</h3>
+        <table class="meta-table" role="presentation"><tr><td>Radek Systems, Brazil - Freelance</td><td class="period">Oct 2021 - Jun 2022</td></tr></table>
+        <ul>
+          <li>Maintained and enhanced existing C# and Xamarin applications through corrective maintenance, refactoring, and incremental improvements.</li>
+          <li>Implemented Wi-Fi configuration and USB communication to receive and process data from external devices.</li>
+          <li>Implemented synchronization between mobile applications and IoT devices.</li>
+        </ul>
+        <p class="technologies"><strong>Technologies:</strong> C#, .NET, Xamarin, Wi-Fi, USB Communication, IoT Integration.</p>
+      </article>
+    </div>
+
+    <div class="page-two">
+      <div class="section experience-section" role="region" aria-labelledby="experience-continuation-heading">
+        <h2 id="experience-continuation-heading" class="continuation-heading">Professional Experiences</h2>
+
+        <article class="role">
+          <h3 class="role-title">Grupo Inlog</h3>
+          <table class="meta-table" role="presentation"><tr><td><strong>Senior Xamarin Developer - Contract</strong></td><td class="period">Oct 2019 - Jun 2022</td></tr></table>
+          <ul>
+            <li>Returned as a contractor to maintain and evolve Xamarin.Forms systems originally developed during my previous tenure.</li>
+            <li>Performed corrective maintenance, refactoring, and improvements across modular client applications, online/offline features, plugins, and hardware integrations.</li>
+          </ul>
+
+          <table class="meta-table" role="presentation"><tr><td><strong>Xamarin Developer - On-site</strong></td><td class="period">Dec 2017 - May 2019</td></tr></table>
+          <ul>
+            <li>Migrated a Xamarin.Android application to Xamarin.Forms and designed a modular architecture that allowed each client to use only the required modules.</li>
+            <li>Developed a driver application for passenger boarding, QR/barcode ticket scanning, bus geolocation, speed and arrival monitoring, route timetables, and submission of operational data to Brazil's National Land Transportation Agency.</li>
+            <li>Developed passenger-facing real-time bus location and arrival prediction features.</li>
+            <li>Developed waste-collection fleet monitoring and a municipal work-order system for urban maintenance demands.</li>
+          </ul>
+          <p class="technologies"><strong>Technologies:</strong> C#, .NET, Xamarin, Xamarin.Android, Xamarin.Forms, REST APIs, Modular Architecture, QR Code, Barcode Scanning, Geolocation, USB Integration.</p>
+        </article>
+
+        <article class="role">
+          <h3 class="role-title">Xamarin Developer</h3>
+          <table class="meta-table" role="presentation"><tr><td>Grupo Madero, Brazil - On-site</td><td class="period">Aug 2016 - Dec 2017</td></tr></table>
+          <ul>
+            <li>Developed a Xamarin.Forms ordering and payment application for restaurants in Brazil and abroad, with payment gateway integration, order tracking, push/SMS/e-mail notifications, individual payments, and bill splitting.</li>
+            <li>Created APIs integrating mobile applications with existing restaurant systems.</li>
+            <li>Developed Xamarin.Android applications for dynamic quality-control questionnaires and customer satisfaction kiosks.</li>
+            <li>Implemented a loyalty points system and a nightly service that calculated and updated customer balances based on purchases.</li>
+          </ul>
+          <p class="technologies"><strong>Technologies:</strong> C#, .NET Framework, .NET Core, Xamarin.Forms, Xamarin.Android, MVVMCross, Prism, Entity Framework, Dapper, REST APIs, SQL Server, Oracle.</p>
+        </article>
+
+        <p class="more-experience">For a detailed view of my other previous experiences, <a href="https://www.linkedin.com/in/tiagocarneiro-dev">visit my LinkedIn profile</a>.</p>
+      </div>
+
+      <div class="section" role="region" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <article class="education-entry">
+          <p><strong>Master's Degree in Biomedicine - In Progress</strong> | Faculdade de Saúde Santa Casa BH | Aug 2026 - 2028</p>
+        </article>
+        <article class="education-entry">
+          <p><strong>Postgraduate Degree in Mobile Applications and Cloud Computing</strong> | Universidade Positivo | 2016 - 2017</p>
+        </article>
+        <article class="education-entry">
+          <p><strong>Bachelor's Degree in Information Systems</strong> | Faculdade Cenecista Presidente Kennedy - FACECLA | 2008 - 2010</p>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
